@@ -11,7 +11,7 @@ navBtn.addEventListener('click', function (event) {
 //Закрытие меню
 window.addEventListener('click', function () {
 
-    if (body.classList.contains('no-scroll')) {
+    if (body.classList.contains('.no-scroll')) {
         toggleMobileNav()
     }
 })
