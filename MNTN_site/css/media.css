@@ -132,6 +132,7 @@
     }
 
     .article-text p{
+        display: block;
         text-align: justify;
     }
 }
