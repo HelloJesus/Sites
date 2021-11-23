@@ -121,7 +121,10 @@
         font-size: 44px;
         
     }
-
+    body,
+    html {
+      position: fixed;
+    }
     .footer-nav-wrapper{
         flex-direction: column;
     }
