@@ -6,6 +6,9 @@ const body = document.body;
 navBtn.addEventListener('click', function (event) {
     event.stopPropagation();
     toggleMobileNav()
+    document.ontouchmove = function (event) {
+        event.preventDefault();
+    }
 })
 
 //Закрытие меню
