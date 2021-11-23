@@ -7,7 +7,7 @@ navBtn.addEventListener('click', function (event) {
     event.stopPropagation();
     toggleMobileNav()
     body.addEventListener('touchmove', function (event) {
-        e.preventDefault();
+        event.preventDefault();
     });
 })
 
