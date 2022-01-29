@@ -39,7 +39,7 @@ document.onclick = function (event) {
         })
         order.addEventListener('touchend', () => {
             // Для моб. девайсов
-            if (parseInt(order.style.bottom) < (-300)) {
+            if (parseInt(order.style.bottom) < (-250)) {
                 console.log('hello')
                 order.style.bottom = -659 + 'px';
             } else {

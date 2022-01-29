@@ -431,7 +431,7 @@ button{
 .order{
     position: fixed;
     width: 375px;
-    height: 659px;
+    /* height: 659px; */
     bottom:  -659px;
     background: #000000;
     border-radius: 16px 16px 0px 0px;
@@ -442,6 +442,9 @@ button{
 
 
 .line{
+    display: block;
+    width: 25px;
+    height: 25px;
     margin: 9px auto 17px auto;
 }
 
@@ -465,7 +468,7 @@ button{
 
 .order-list{
     width: 327px;
-    height: 416px;
+    height: 316px;
     margin: auto;
     overflow: scroll;
 }
