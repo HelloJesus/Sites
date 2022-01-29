@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria DON REMOLO</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <script src="./js/menu.js"></script>
+    <script src="./js/orderButton.js"></script>
+    <script src="./js/order.js"></script>
+</head>
+
+<body>
+    <div class="mobile-menu">
+        <div id="containermenu" class="container-menu">
+            <div class="menu-logo">
+                <img src="./img/logo 1.svg" alt="">
+                <div class="logo__title">
+                    <h1>Pizzeria</h1>
+                    <h1>DON REMOLO</h1>
+                </div>
+            </div>
+            <div class="menu-content">
+                <div class="menu-item">
+                    <p><a>Inicio</a></p>
+                    <img src="img/arrow.svg" class="arrow"></img>
+                </div>
+                <div class="menu-item">
+                    <p><a>Favoritos</a></p>
+                    <img src="img/arrow.svg" class="arrow"></img>
+                </div>
+                <div class="menu-item">
+                    <p><a>Reportar</a></p>
+                    <img src="img/arrow.svg" class="arrow"></img>
+                </div>
+                <div class="menu-item">
+                    <p><a>Ajustes</a></p>
+                    <img src="img/arrow.svg" class="arrow"></img>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="products-wrapper">
+        <div class="header">
+            <div class="header-products">
+                <div class="header-menu">
+                    <div>
+                        <button id="menuBtn" class="btn-menu">
+                            <span class="btn-menu-icon"></span>
+                        </button>
+                    </div>
+                    <img src="./img/vector.svg">
+                </div>
+                <div class="header-title">
+                    <h1>Postres</h1>
+                    <h3>Elige nuestros postres exquisitos </h3>
+                </div>
+                <div class="header-icons" id="icons">
+                    <div class="icon" id="icon-1">
+                        <a href="#"><img src="./img/pizza.svg"></a>
+                    </div>
+                    <div class="icon" id="icon-2">
+                        <a href="#"><img src="./img/fruit.svg"></a>
+                    </div>
+                    <div class="icon" id="icon-3">
+                        <a href="#"><img src="./img/drink.svg"></a>
+                    </div>
+                    <div class="icon" id="icon-4">
+                        <a href="#"><img src="./img/sweets.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-products">
+            <div class="card-pizza">
+                <div class="card">
+                    <img src="./img/pizza_1.png">
+                    <div class="product-info">
+                        <h4>Pizza muzzarella</h4>
+                        <h5 id="cardPrice">$ 1200.<span>00</span></h5>
+                    </div>
+                    <button class="card-btn">
+                        <img src="./img/plus.svg">
+                    </button>
+                </div>
+                <div class="card">
+                    <img src="./img/pizza_2.png">
+                    <div class="product-info">
+                        <h4>Pizza pepperoni</h4>
+                        <h5 id="cardPrice">$ 1100.<span>00</span></h5>
+                    </div>
+                    <button class="card-btn">
+                        <img src="./img/plus.svg">
+                    </button>
+                </div>
+                <div class="card">
+                    <img src="./img/pizza_3.png">
+                    <div class="product-info">
+                        <h4>Pizza napolitana</h4>
+                        <h5 id="cardPrice">$ 1050.<span>00</span></h5>
+                    </div>
+                    <button class="card-btn">
+                        <img src="./img/plus.svg">
+                    </button>
+                </div>
+                <div class="card">
+                    <img src="./img/pizza_4.png">
+                    <div class="product-info">
+                        <h4>Pizza j&m</h4>
+                        <h5 id="cardPrice">$ 900.<span>00</span></h5>
+                    </div>
+                    <button class="card-btn">
+                        <img src="./img/plus.svg">
+                    </button>
+                </div>
+            </div>
+            <div class="breaded">
+                <div class="card">
+                    <img src="./img/empanadas 1.png">
+                    <div class="product-info">
+                        <h4>Empanada atún</h4>
+                        <h5 id="cardPrice">$ 90.<span>00</span></h5>
+                    </div>
+                    <button class="card-btn">
+                        <img src="./img/plus.svg">
+                    </button>
+                </div>
+                <div class="card">
+                    <img src="./img/empanadas 2.png">
+                    <div class="product-info">
+                        <h4>Pizza pepperoni</h4>
+                        <h5 id="cardPrice">$ 90.<span>00</span></h5>
+                    </div>
+                    <button class="card-btn">
+                        <img src="./img/plus.svg">
+                    </button>
+                </div>
+                <div class="card">
+                    <img src="./img/empanadas 3.png">
+                    <div class="product-info">
+                        <h4>Pizza napolitana</h4>
+                        <h5 id="cardPrice">$ 90.<span>00</span></h5>
+                    </div>
+                    <button class="card-btn">
+                        <img src="./img/plus.svg">
+                    </button>
+                </div>
+
+            </div>
+            <div class="drink">
+                <div class="card">
+                    <img src="./img/drink_1.png">
+                    <div class="product-info">
+                        <h4>Cerveza 437ml</h4>
+                        <h5 id="cardPrice">$ 105.<span>00</span></h5>
+                    </div>
+                    <button class="card-btn">
+                        <img src="./img/plus.svg">
+                    </button>
+                </div>
+                <div class="card">
+                    <img src="./img/drink_2.png">
+                    <div class="product-info">
+                        <h4>Agua 500ml</h4>
+                        <h5 id="cardPrice">$ 95.<span>00</span></h5>
+                    </div>
+                    <button class="card-btn">
+                        <img src="./img/plus.svg">
+                    </button>
+                </div>
+                <div class="card">
+                    <img src="./img/drink_3.png">
+                    <div class="product-info">
+                        <h4>Coca-Cola 500ml</h4>
+                        <h5 id="cardPrice">$ 120.<span>00</span></h5>
+                    </div>
+                    <button class="card-btn">
+                        <img src="./img/plus.svg">
+                    </button>
+                </div>
+                <div class="card">
+                    <img src="./img/drink_4.png">
+                    <div class="product-info">
+                        <h4>Pepsi 500ml</h4>
+                        <h5 id="cardPrice">$ 100.<span>00</span></h5>
+                    </div>
+                    <button class="card-btn">
+                        <img src="./img/plus.svg">
+                    </button>
+                </div>
+                <div class="card">
+                    <img src="./img/drink_5.png">
+                    <div class="product-info">
+                        <h4>Cepita naranja 1L</h4>
+                        <h5 id="cardPrice">$ 170.<span>00</span></h5>
+                    </div>
+                    <button class="card-btn">
+                        <img src="./img/plus.svg">
+                    </button>
+                </div>
+            </div>
+            <div class="sweets">
+                <div class="card">
+                    <img src="./img/sweets_1.png">
+                    <div class="product-info">
+                        <h4>Almendrado</h4>
+                        <h5 id="cardPrice">$ 350.<span>00</span></h5>
+                    </div>
+                    <button class="card-btn">
+                        <img src="./img/plus.svg">
+                    </button>
+                </div>
+                <div class="card">
+                    <img src="./img/sweets_2.png">
+                    <div class="product-info">
+                        <h4>Bombones</h4>
+                        <h5 id="cardPrice">$ 500.<span>00</span></h5>
+                    </div>
+                    <button class="card-btn">
+                        <img src="./img/plus.svg">
+                    </button>
+                </div>
+                <div class="card">
+                    <img src="./img/sweets_3.png">
+                    <div class="product-info">
+                        <h4>Chocotorta</h4>
+                        <h5 id="cardPrice">$ 720.<span>00</span></h5>
+                    </div>
+                    <button class="card-btn">
+                        <img src="./img/plus.svg">
+                    </button>
+                </div>
+                <div class="card">
+                    <img src="./img/sweets_4.png">
+                    <div class="product-info">
+                        <h4>Helado</h4>
+                        <h5 id="cardPrice">$ 400.<span>00</span></h5>
+                    </div>
+                    <button class="card-btn">
+                        <img src="./img/plus.svg">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="order-button">
+            <div class="order-text">
+                <p class="total-items">4 Items</p>
+                <p class="total-price"><span class="dollar">$ </span><span class="price">1500</span><span
+                        class="float-price">.00</span>
+                </p>
+            </div>
+            <div class="order-img">
+                <img src="./img/order.svg">
+            </div>
+        </div> -->
+        <div class="order">
+            <img class="line" src="./img/dragable-line.svg">
+            <div class="order-options">
+                <div class="list-text">
+                    <img src="./img/close_list.svg">
+                    <h3>Listado del pedido</h3>
+                </div>
+                <img src="./img/basket.svg">
+            </div>
+            <div class="order-list">
+                <div class="order-card">
+                    <div class="card-wrapper">
+                        <img src="./img/drink_5.png" alt="">
+                        <div class="card-description">
+                            <h4>Cepita naranja 1L</h4>
+                            <p>$ 170<span class="card-float">.00</span></p>
+                        </div>
+                        <div class="card-counter">
+                            <h3 class="calc" data-set="minus">-</h3>
+                            <div class="counter">1</div>
+                            <h3 class="calc" data-set="plus">+</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-card">
+                    <div class="card-wrapper">
+                        <img src="./img/drink_5.png" alt="">
+                        <div class="card-description">
+                            <h4>Cepita naranja 1L</h4>
+                            <p>$ 170<span class="card-float">.00</span></p>
+                        </div>
+                        <div class="card-counter">
+                            <h3 class="calc" data-set="minus">-</h3>
+                            <div class="counter">1</div>
+                            <h3 class="calc" data-set="plus">+</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-card">
+                    <div class="card-wrapper">
+                        <img src="./img/drink_5.png" alt="">
+                        <div class="card-description">
+                            <h4>Cepita naranja 1L</h4>
+                            <p>$ 170<span class="card-float">.00</span></p>
+                        </div>
+                        <div class="card-counter">
+                            <h3 class="calc" data-set="minus">-</h3>
+                            <div class="counter">1</div>
+                            <h3 class="calc" data-set="plus">+</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-card">
+                    <div class="card-wrapper">
+                        <img src="./img/drink_5.png" alt="">
+                        <div class="card-description">
+                            <h4>Cepita naranja 1L</h4>
+                            <p>$ 170<span class="card-float">.00</span></p>
+                        </div>
+                        <div class="card-counter">
+                            <h3 class="calc" data-set="minus">-</h3>
+                            <div class="counter">1</div>
+                            <h3 class="calc" data-set="plus">+</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-card">
+                    <div class="card-wrapper">
+                        <img src="./img/drink_5.png" alt="">
+                        <div class="card-description">
+                            <h4>Cepita naranja 1L</h4>
+                            <p>$ 170<span class="card-float">.00</span></p>
+                        </div>
+                        <div class="card-counter">
+                            <h3 class="calc" data-set="minus">-</h3>
+                            <div class="counter">1</div>
+                            <h3 class="calc" data-set="plus">+</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-checkout">
+                <div class="checkout-info">
+                    <h3>Items totales</h3>
+                    <div class="total-price">
+                        <div class="ship">
+                            <p>$ 100<span class="ship-float">.00</span></p>
+                            <img src="./img/truck.svg">
+                        </div>
+                        <h2>$ 1650<span class="ship-float">.00</span></h2>
+                    </div>
+                </div>
+                <button class="checkout-btn">
+                    <h2>Ir al checkout</h2>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
