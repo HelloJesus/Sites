@@ -10,6 +10,7 @@ document.onclick = function (event) {
     if (event.target.closest('.order-button')) {
         const order = document.querySelector('.order');
         // const line = document.querySelector('.line');
+        order.style.transition = 'bottom 0.3s ease';
         order.style.bottom = 0;
 
         console.log(document.querySelector('.order').clientHeight);
@@ -23,29 +24,43 @@ document.onclick = function (event) {
         //     order.style.transform = 'none'
         //     line.style.opacity = 1
         // })
+        order.addEventListener('touchstart', (evt) => {
+            order.style.removeProperty('transition');
+            const firstTouch = evt.touches[0];
+            y1 = firstTouch.clientY;
+            console.log(`y1: ${y1}`)
+        })
+
         order.addEventListener('touchmove', (evt) => {
+            // if (!parseInt(order.style.top)) order.style.top = '261px';
             const line = evt.target.querySelector('.line');
             if (!evt.target.closest('.line')) return;
-            if (evt.changedTouches[0].pageY < 281) return;
-            console.log(270 - evt.changedTouches[0].pageY)
+            // if (evt.changedTouches[0].pageY < 281) return;
+            let y2 = evt.touches[0].clientY;
+            console.log(`y2: ${y2}`)
+            let yDiff = y1 - y2;
+            console.log(yDiff)
+            // console.log(`${evt.changedTouches[0].pageY}`)
             // console.log(`Top: ${order.getBoundingClientRect().top}`)
             // Для моб. девайсов
             // line.style.opacity = 1;
 
             // order.style.transform = `translate(0px, ${evt.changedTouches[0].pageX}px)`
-            order.style.bottom = (270 - evt.changedTouches[0].pageY) + 'px';
-
+            // order.style.bottom = parseInt(order.style.bottom) - 5 + 'px';
+            order.style.bottom = yDiff + 'px';
 
         })
         order.addEventListener('touchend', () => {
+            order.style.transition = 'bottom 0.3s ease';
             // Для моб. девайсов
-            if (parseInt(order.style.bottom) < (-250)) {
+            if (parseInt(order.style.bottom) < (-200)) {
                 console.log('hello')
                 order.style.bottom = -659 + 'px';
             } else {
                 order.style.bottom = 0;
             }
             // order.style.opacity = 1
+
         })
     }
     // проверяем нажатие добавления товара

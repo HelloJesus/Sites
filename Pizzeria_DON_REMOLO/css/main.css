@@ -98,14 +98,13 @@ button{
    display: block;
    position: absolute;
    z-index: 3;
-   
+   transition: all 0.2s ease-in;
    left: 0;
    height: 25px;
    width: 29px;
    cursor: pointer;
    background: none;
    border: none;
-    transition: all 0.2s ease-in;
 }
 
 .btn-menu.active{
@@ -436,7 +435,7 @@ button{
     background: #000000;
     border-radius: 16px 16px 0px 0px;
     z-index: 5;
-    transition: all 0.2s ease-in;
+    /* transition: all 0.2s ease-in; */
     
 }
 
