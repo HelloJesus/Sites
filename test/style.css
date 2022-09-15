@@ -1,0 +1,36 @@
+.menu-toggler {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    transform: translateX(100%);
+}
+
+.menu-active {
+    display: block;
+    position: fixed;
+    background-color: rgb(111, 0, 0);
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 100%;
+    transform: translateX(0%);
+}
+
+.menu__inner {
+    text-align: center;
+    margin-top: 50px;
+    height: 250px;
+    overflow-y: auto;
+    color: #ffffff;
+}
